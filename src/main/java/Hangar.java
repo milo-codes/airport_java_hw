@@ -11,4 +11,8 @@ public class Hangar {
     public ArrayList<Plane> getPlaneList() {
         return this.planeList;
     }
+
+    public void addPlaneToHangar(Plane plane) {
+        planeList.add(plane);
+    }
 }

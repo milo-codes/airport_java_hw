@@ -34,4 +34,11 @@ public class PlaneTest {
         plane.addPassenger(passenger);
         assertEquals(1, plane.getPassengerList().size());
     }
+
+    @Test
+    public void canRemovePassenger() {
+        plane.addPassenger(passenger);
+        plane.removePassenger();
+        assertEquals(0, plane.getPassengerList().size());
+    }
 }

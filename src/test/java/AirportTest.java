@@ -3,26 +3,22 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class HangarTest {
+public class AirportTest {
 
+    Airport airport;
     Hangar hangar;
     Plane plane;
 
     @Before
     public void setup() {
+        airport = new Airport("EDI");
         hangar = new Hangar();
         plane = new Plane("ScottishWings", PlaneType.AIRBUS330);
     }
 
     @Test
-    public void canGetPlaneList( ){
-        assertEquals(0, hangar.getPlaneList().size());
-    }
-
-    @Test
-    public void canAddPlaneToPlaneList() {
-        hangar.addPlaneToHangar(plane);
-        assertEquals(1, hangar.getPlaneList().size());
+    public void canGetHangarList() {
+        assertEquals(0, airport.getHangarList().size());
     }
 
 }

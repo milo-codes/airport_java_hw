@@ -2,12 +2,16 @@ import java.util.ArrayList;
 
 public class Airport {
 
-    private ArrayList<Plane> hangar;
+    private ArrayList<Hangar> hangarList;
     private String airportCode;
 
     public Airport(String airportCode) {
-        this.hangar = new ArrayList<>();
+        this.hangarList = new ArrayList<>();
         this.airportCode = airportCode;
+    }
+
+    public ArrayList<Hangar> getHangarList() {
+        return this.hangarList;
     }
 
 }

@@ -28,4 +28,11 @@ public class Plane {
         this.passengerList.add(passenger);
     }
 
+    public Passenger removePassenger() {
+        if (this.passengerList.size() > 0) {
+            return this.passengerList.remove(0);
+        }
+        return null;
+    }
+
 }
