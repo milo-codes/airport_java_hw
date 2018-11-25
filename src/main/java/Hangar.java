@@ -13,6 +13,10 @@ public class Hangar {
     }
 
     public void addPlaneToHangar(Plane plane) {
-        planeList.add(plane);
+        this.planeList.add(plane);
+    }
+
+    public Plane removePlaneFromHangar() {
+        return this.planeList.remove(0);
     }
 }

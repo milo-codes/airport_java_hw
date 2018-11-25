@@ -21,4 +21,9 @@ public class AirportTest {
         assertEquals(0, airport.getHangarList().size());
     }
 
+    @Test
+    public void canGetAirportCode() {
+        assertEquals("EDI", airport.getAirportCode());
+    }
+
 }

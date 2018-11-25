@@ -14,4 +14,8 @@ public class Airport {
         return this.hangarList;
     }
 
+    public String getAirportCode() {
+        return this.airportCode;
+    }
+
 }
