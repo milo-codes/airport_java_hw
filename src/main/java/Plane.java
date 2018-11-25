@@ -12,4 +12,16 @@ public class Plane {
         this.passengerList = new ArrayList<>();
     }
 
+    public String getAirline() {
+        return this.airline;
+    }
+
+    public PlaneType getType() {
+        return this.type;
+    }
+
+    public ArrayList<Passenger> getPassengerList() {
+        return this.passengerList;
+    }
+
 }
