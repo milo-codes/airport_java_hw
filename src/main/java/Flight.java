@@ -10,6 +10,16 @@ public class Flight {
         this.destination = destination;
     }
 
+    public Plane getPlane() {
+        return this.plane;
+    }
 
+    public String getFlightNumber() {
+        return this.flightNumber;
+    }
+
+    public String getDestination() {
+        return this.destination;
+    }
 
 }

@@ -6,11 +6,12 @@ import static org.junit.Assert.assertEquals;
 public class PlaneTest {
 
     Plane plane;
+    Passenger passenger;
 
     @Before
     public void setup() {
         plane = new Plane("ScottishWings", PlaneType.AIRBUS320);
-
+        passenger = new Passenger();
     }
 
     @Test
@@ -28,4 +29,9 @@ public class PlaneTest {
         assertEquals(0, plane.getPassengerList().size());
     }
 
+    @Test
+    public void canAddPassenger() {
+        plane.addPassenger(passenger);
+        assertEquals(1, plane.getPassengerList().size());
+    }
 }

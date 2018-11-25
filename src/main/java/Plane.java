@@ -24,4 +24,8 @@ public class Plane {
         return this.passengerList;
     }
 
+    public void addPassenger(Passenger passenger) {
+        this.passengerList.add(passenger);
+    }
+
 }
