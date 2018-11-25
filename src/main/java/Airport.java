@@ -9,4 +9,5 @@ public class Airport {
         this.hangar = new ArrayList<>();
         this.airportCode = airportCode;
     }
+
 }
